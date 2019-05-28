@@ -359,4 +359,14 @@ class Address extends \Faker\Provider\Address
     {
         return static::randomElement(static::$streetPrefix);
     }
+    
+    public static function latitude($min = 44.41886, $max = 52.18903)
+    {
+        return parent::latitude($min, $max);
+    }
+
+    public static function longitude($min = 22.20555, $max = 40.13222)
+    {
+        return parent::longitude($min, $max);
+    }
 }
